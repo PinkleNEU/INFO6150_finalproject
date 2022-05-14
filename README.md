@@ -1,6 +1,6 @@
 # INFO6150_finalproject
 
-MY_MEMORIES
+
 Add photocards and memories attached to photo.
 
 By:
