@@ -3,7 +3,7 @@ import express from "express"; //express is a library for backend
 import mongoose from "mongoose";
 
 import cors from "cors";
-import MemoryModel from './models/Memories.js';
+import Memories from './models/Memories.js';
 
 const port=3001;
 
@@ -32,7 +32,7 @@ app.use(cors());
 app.post ('/api/addData', async(req, res) =>
 {
     console.log(req);
-    const memories= new MemoryModel({title: req.body.title,  location:req.body.location,  description: req.body.description
+    const memories= new Memories({title: req.body.title,  location:req.body.location,  description: req.body.description, addImage: req.body.addImage
     })//values from memoryschema
     try{
         await memories.save();  //save info in collection

@@ -20,8 +20,12 @@ const MemoriesSchema= new mongoose.Schema ({
     {
         type:String,
         required:true,
-    }
-});
+    },
+    addImage:
+    {
+        type:String,
+        required:true,
+}});
 
 //pass to model in mongoose so that it is created in database itself
 
