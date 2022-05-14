@@ -32,7 +32,7 @@ app.use(cors());
 app.post ('/api/addData', async(req, res) =>
 {
     console.log(req);
-    const memories= new Memories({title: req.body.title,  location:req.body.location,  description: req.body.description, addImage: req.body.addImage
+    const memories= new Memories({title: req.body.title,  location:req.body.location,  description: req.body.description
     })//values from memoryschema
     try{
         await memories.save();  //save info in collection
